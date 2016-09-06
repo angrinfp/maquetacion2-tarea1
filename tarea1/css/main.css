@@ -1,0 +1,276 @@
+/**********************
+		general
+**********************/
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Source Sans Pro';
+	font-size: 16px;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/**********************
+		top
+**********************/
+#top {
+	width: 100%;
+	background: #000;
+	color: #8b8b8b;
+	font-size: 14px;
+}
+
+#left p {
+	display: inline-block;
+	padding: 0 30px;
+}
+
+#left p:first-child {
+	border-right: 1px solid #4b4b4b;
+	padding-left: 0;
+}
+
+#right {
+	float: right;
+	margin-top: -35px;
+}
+
+/**********************
+		top nav
+**********************/
+#top-nav {
+	width: 100%;
+	background: #843fd3;
+	color: #fff;
+	padding: 20px 0;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 22px;
+	margin: 0;
+}
+
+#nav {
+	float: right;
+	margin-top: -23px;
+}
+
+#nav a {
+	text-decoration: none;
+	color: #fff;
+	margin: 0 20px;
+	padding: 20px 0;
+	font-weight: bold;
+}
+
+#nav a:hover {
+	border-top: 3px solid #fff;
+}
+
+#nav a:last-child {
+	margin-right: 0;
+}
+
+/**********************
+		header
+**********************/
+#header {
+	width: 100%;
+	overflow: hidden;
+}
+
+#header img {
+	width: 100%;
+}
+
+#h-title {
+	position: absolute;
+	top: 24em;
+}
+
+#h-title h2 {
+	font-size: 60px;
+	color: #fff;
+	width: 600px;
+	text-shadow: 2px 3px #191919;
+}
+
+#message {
+	position: absolute;
+	top: 62%;
+	color: #fff;
+	font-size: 18px;
+}
+
+#botones {
+	position: absolute;
+	top: 70%;
+}
+
+#descubre {
+	background: #843fd3;
+	color: #fff;
+	border: none;
+	padding: 13px;
+	cursor: pointer;
+	margin-right: 20px;
+}
+
+#registrate {
+	background: transparent;
+	border: 2px solid #fff;
+	color: #fff;
+	padding: 10px;
+	cursor: pointer;
+}
+
+/**********************
+	quienes somos
+**********************/
+#about {
+	text-align: center;
+	padding: 100px 0;
+	background: #fff;
+	color: #999;
+}
+
+h4 {
+	text-transform: uppercase;
+	font-size: 30px;
+	color: #000;
+	margin: 0 0 15px 0;
+}
+	/**********************
+		SECTIONS TITLES
+	**********************/
+	h4 span {
+		color: #843fd3;
+	}
+
+	.line1 {
+		content: " ";
+		width: 6rem;
+		height: 4px;
+		background: #843fd3;
+		margin: 0 auto 10px auto;
+	}
+
+	.line2 {
+		content: " ";
+		width: 3rem;
+		height: 4px;
+		background: #843fd3;
+		margin: 0 auto 10px auto;
+	}
+
+#about p {
+	width: 40rem;
+	margin: 50px auto;
+}
+
+/**********************
+		proyectos
+**********************/
+#proyectos {
+	text-align: center;
+	padding: 100px 0;
+	background: #f6f6f6;
+	color: #999;
+}
+
+#boxes {
+	width: 100%;
+	margin-top: 40px;
+}
+
+.box {
+	display: inline-block;
+	background: #fff;
+	width: 22rem;
+	margin: 0 20px;
+}
+
+.box img {
+	width: 100%;
+}
+
+.proyects {
+	text-align: center;
+	padding: 0 40px 20px 40px;
+}
+
+.proyects h5 {
+	color: #000;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+.line2 {
+	content: " ";
+	width: 3rem;
+	height: 4px;
+	background: #843fd3;
+	margin: 0 auto 10px auto;
+}
+
+/**********************
+		escogernos
+**********************/
+#escogernos {
+	text-align: center;
+	padding: 100px 0;
+	color: #999;
+}
+
+#table {
+	width: 70rem;
+	margin: 30px auto 0 auto;
+}
+
+.row {
+	border-bottom: 1px solid #efefef;
+}
+
+.row:last-child {
+	border-bottom: none;
+}
+
+.col {
+	display: inline-block;
+	width: 20rem;
+	border-left: 1px solid #efefef;
+	padding: 20px;
+}
+
+.col:first-child {
+	border-left: none;
+}
+
+.icon {
+	color: #843fd3;
+	font-size: 30px;
+}
+
+h6 {
+	color: #000;
+	text-transform: uppercase;
+	font-size: 18px;
+	margin: 15px;
+}
+
+/**********************
+		precios
+**********************/
+#precios {
+	width: 100%;
+	overflow: hidden;
+}
+
+#precios img {
+	width: 100%;
+}
