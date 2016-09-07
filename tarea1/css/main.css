@@ -4,12 +4,13 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Source Sans Pro';
+	font-family: 'Source Sans Pro', 'Open Sans', 'Poppins', sans-serif;
 	font-size: 16px;
 }
 
 .container {
 	width: 80%;
+	max-width: 1500px;
 	margin: 0 auto;
 }
 
@@ -36,6 +37,7 @@ body {
 #right {
 	float: right;
 	margin-top: -35px;
+	text-transform: uppercase;
 }
 
 /**********************
@@ -57,14 +59,14 @@ h1 {
 
 #nav {
 	float: right;
-	margin-top: -23px;
+	margin-top: -24px;
 }
 
 #nav a {
 	text-decoration: none;
 	color: #fff;
 	margin: 0 20px;
-	padding: 20px 0;
+	padding: 23px 0;
 	font-weight: bold;
 }
 
@@ -74,6 +76,14 @@ h1 {
 
 #nav a:last-child {
 	margin-right: 0;
+}
+
+.arrow-down {
+  	width: 0; 
+  	height: 0; 
+  	border-left: 5px solid transparent;
+  	border-right: 5px solid transparent;
+  	border-top: 5px solid #fff;
 }
 
 /**********************
@@ -86,11 +96,12 @@ h1 {
 
 #header img {
 	width: 100%;
+	height: auto;
 }
 
 #h-title {
 	position: absolute;
-	top: 24em;
+	top: 38%;
 }
 
 #h-title h2 {
@@ -116,7 +127,7 @@ h1 {
 	background: #843fd3;
 	color: #fff;
 	border: none;
-	padding: 13px;
+	padding: 10px;
 	cursor: pointer;
 	margin-right: 20px;
 }
@@ -126,6 +137,7 @@ h1 {
 	border: 2px solid #fff;
 	color: #fff;
 	padding: 10px;
+	box-sizing: border-box;
 	cursor: pointer;
 }
 
@@ -169,8 +181,18 @@ h4 {
 	}
 
 #about p {
-	width: 40rem;
+	width: 60%;
 	margin: 50px auto;
+}
+
+.video-wrap {
+		width: 100%;
+		height: 100%;
+	}
+
+video {
+	height: auto!important;
+	max-width: 100%;
 }
 
 /**********************
@@ -191,7 +213,7 @@ h4 {
 .box {
 	display: inline-block;
 	background: #fff;
-	width: 22rem;
+	width: 28%;
 	margin: 0 20px;
 }
 
@@ -210,14 +232,6 @@ h4 {
 	font-size: 18px;
 }
 
-.line2 {
-	content: " ";
-	width: 3rem;
-	height: 4px;
-	background: #843fd3;
-	margin: 0 auto 10px auto;
-}
-
 /**********************
 		escogernos
 **********************/
@@ -228,7 +242,7 @@ h4 {
 }
 
 #table {
-	width: 70rem;
+	width: 80%;
 	margin: 30px auto 0 auto;
 }
 
@@ -242,7 +256,7 @@ h4 {
 
 .col {
 	display: inline-block;
-	width: 20rem;
+	width: 25%;
 	border-left: 1px solid #efefef;
 	padding: 20px;
 }
@@ -269,8 +283,277 @@ h6 {
 #precios {
 	width: 100%;
 	overflow: hidden;
+	text-align: center;
+	position: relative;
 }
 
 #precios img {
 	width: 100%;
+	height: auto;
+}
+
+#precios h4 {
+	position: absolute;
+	top: 15%;
+}
+
+#cajas {
+	position: absolute;
+	top: 20%;
+	width: 100%;
+	margin-top: 40px;
+	z-index: 99;
+}
+
+.caja {
+	display: inline-block;
+	background: #fff;
+	width: 28%;
+	margin: 0 20px;
+}
+
+.caja img {
+	width: 100%;
+}
+
+.precios {
+	text-align: center;
+	padding: 0 40px 20px 40px;
+}
+
+.precios h5 {
+	color: #000;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+/**********************
+	@media 1050
+**********************/
+@media (max-width: 1050px) {
+	/**********************
+			top nav
+	**********************/
+	#top-nav {
+		width: 100%;
+	}
+
+	h1 {
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 22px;
+		margin: 0;
+	}
+
+	#nav {
+		float: right;
+		margin-top: -24px;
+	}
+
+	#nav a {
+		text-decoration: none;
+		color: #fff;
+		margin: 0 10px;
+		padding: 23px 0;
+		font-weight: bold;
+	}
+
+	#nav a:hover {
+		border-top: 3px solid #fff;
+	}
+
+	#nav a:last-child {
+		margin-right: 0;
+	}
+
+	.arrow-down {
+	  	width: 0; 
+	  	height: 0;
+	  	border-left: 5px solid transparent;
+	  	border-right: 5px solid transparent;
+	  	border-top: 5px solid #fff;
+	}
+}
+
+/**********************
+		@media 800
+**********************/
+@media (max-width: 800px) {
+	.container {
+		width: 90%;
+	}
+
+	/**********************
+		top
+	**********************/
+	#top {
+		width: 100%;
+	}
+
+	#left p {
+		display: inline-block;
+		padding: 0 10px;
+	}
+
+	#left p:first-child {
+		border-right: 1px solid #4b4b4b;
+		padding-left: 0;
+	}
+
+	#right {
+		float: right;
+		margin-top: -35px;
+	}
+
+	/**********************
+			top nav
+	**********************/
+	#top-nav {
+		width: 100%;
+	}
+
+	h1 {
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 22px;
+		text-align: center;
+	}
+
+	#nav {
+		width: 100%;
+		float: none;
+		margin-top: 20px;
+		border-top: 5px solid #fff;
+	}
+
+	#nav a {
+		text-decoration: none;
+		color: #fff;
+		display: block;
+		padding: 30px 0;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	#nav a:last-child {
+		padding-bottom: 0;
+	}
+
+	#nav a:hover {
+		border: none;
+	}
+
+	.arrow-down {
+	  	width: 0; 
+	  	height: 0; 
+	  	float: right;
+	  	border-left: 5px solid transparent;
+	  	border-right: 5px solid transparent;
+	  	border-top: 5px solid #fff;
+	}
+
+	/**********************
+		quienes somos
+	**********************/
+	.video-wrap {
+		width: 100%;
+		height: 100%;
+	}
+
+	video {
+		height: auto!important;
+		max-width: 100%;
+	}
+
+	#about p {
+		width: 100%;
+	}
+
+	/**********************
+		SECTIONS TITLES
+	**********************/
+	h4 span {
+		color: #843fd3;
+		font-size: 30px;
+	}
+
+	.line1 {
+		content: " ";
+		width: 0;
+		height: 0;
+	}
+
+	.line2 {
+		content: " ";
+		width: 0;
+		height: 0;
+	}
+
+	/**********************
+			proyectos
+	**********************/
+	#boxes {
+		width: 100%;
+		margin-top: 40px;
+	}
+
+	.box {
+		background: #fff;
+		width: 100%;
+		margin: 40px 0;
+		box-shadow: 1px 5px #eee;
+	}
+
+	.box img {
+		width: 100%;
+	}
+
+	.proyects {
+		text-align: center;
+		padding: 0 40px 20px 40px;
+	}
+
+	.proyects h5 {
+		color: #000;
+		text-transform: uppercase;
+		font-size: 18px;
+	}
+
+	/**********************
+			escogernos
+	**********************/
+	#escogernos {
+		text-align: center;
+		padding: 100px 0;
+		color: #999;
+	}
+
+	#table {
+		width: 100%;
+		margin: 30px auto 0 auto;
+	}
+
+	.col {
+		display: block;
+		width: 100%;
+		padding: 20px;
+		border-bottom: 1px solid #efefef;
+		border-left: none;
+	}
+
+	.col:last-child {
+		border-bottom: none;
+	}
+
+	.icon {
+		color: #843fd3;
+		font-size: 30px;
+	}
+
+	h6 {
+		color: #000;
+		text-transform: uppercase;
+		font-size: 18px;
+		margin: 15px;
+	}
 }

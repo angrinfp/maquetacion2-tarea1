@@ -3,6 +3,9 @@
 	<head>
 		<title>Trabajo 1</title>
 		<meta charset="utf-8">
+		<!--Hace que en movil el usuario no pueda hacerle zoom in/out-->
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<!---->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700,700italic" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic,700,700italic">
 		<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,300">
@@ -28,11 +31,11 @@
 					Logo Pro
 				</h1>
 				<nav id="nav">
-					<a href="#">Inicio</a>
+					<a href="#">Inicio <span class="arrow-down"></span></a>
 					<a href="#">Quienes somos</a>
 					<a href="#">Servicios</a>
-					<a href="#">Portafolio</a>
-					<a href="#">Blog</a>
+					<a href="#">Portafolio <span class="arrow-down"></span></a>
+					<a href="#">Blog <span class="arrow-down"></span></a>
 					<a href="#">Contacto</a>
 				</nav>
 			</div>
@@ -70,9 +73,11 @@
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-				<video controls loop>
-					<source src="multimedia/video/sample-video.mp4" />
-				</video>
+				<div class="video-wrap">
+					<video controls>
+						<source src="multimedia/video/sample-video.mp4" />
+					</video>
+				</div>
 			</div>
 		</section>
 
@@ -174,6 +179,44 @@
 
 		<section id="precios">
 			<img src="./multimedia/img/image-1.jpg">
+			<div class="container">
+				<h4>
+					Nuestros Precios
+				</h4>
+				<p>Elija uno de nuestros planes y únete a la aventura!</p>
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div id="cajas">
+					<div class="caja">
+						<div class="precios">
+							<h5>Light</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</div>
+					<div class="caja">
+						<div class="precios">
+							<h5>Basic</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</div>
+					<div class="caja">
+						<div class="precios">
+							<h5>Unlimited</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</div>
+					<div class="caja">
+						<div class="precios">
+							<h5>Premium</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 	</body>
 </html>
